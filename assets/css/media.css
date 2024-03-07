@@ -1,0 +1,134 @@
+@media (max-width: 768px){
+    .mobile-button {
+        display: block;
+       
+    }
+        .navbar-nav {
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 80vh;
+        width: 100vw;
+        flex-direction: column !important;
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        margin-right: 110%;
+        transition: .5s linear;
+        z-index: 5 !important;
+    }
+    #card-mobile-indicator{
+        display: block;
+    }
+    /* nosso local */
+    #subtitle-service {
+       
+        font-size: 1.4rem;
+    }
+    /* footer */
+    footer h1 {
+        font-size: 1.2rem;
+       
+    }
+    footer a,
+    footer span{
+        font-size: 1rem;
+    }
+    .credits{
+        font-size: 0.9rem !important;
+    }
+}
+@media(max-width:425px){
+    .navbar-nav {
+       
+         height: auto
+        }
+        .navbar-brand img {
+          
+            margin-left: 10px;
+        }
+        .navbar-nav #social-area{
+            display:block !important;
+        }
+    #information_area {
+        height: 20rem;
+        width: 100%;
+        bottom: 0;
+        margin-left: 0rem;
+    }
+    .topMenu .bi-telephone{
+       opacity: 0;
+    }
+    #button-social-header{
+        display: none;
+    }
+    .navbar-nav #social-area i{
+        font-size: 2rem;
+        color:#5ba379;
+        
+    }
+    .main-informations{
+        flex-wrap: wrap;
+        
+            margin: 3rem 0;
+        
+    }
+    #subtitle-service {
+    font-size: 1rem;
+}#title-section{
+    font-size:2rem
+}
+   /* main */
+   .description{
+    margin-left: 0;
+    text-align: left;
+    letter-spacing: 0px;
+    padding: 0 20px;
+   }
+   /* nosso local */
+   #subtitle-service {
+    font-size: 1rem;
+}
+/* galeria */
+.galery-item {
+overflow: hidden;
+   height:60vh
+}
+.galery-item img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+  /* footer */
+  footer{
+    flex-direction: column;
+  }
+  .social-media{
+    width: 100%;
+  }
+  .social-media #social-area{
+    justify-content: space-around;
+  }
+  footer .social-media i{
+    font-size: 1.8rem;
+  }
+  .credits{
+   flex-wrap: wrap;
+   gap:0.4rem !important
+}
+}
+@media(max-width:320px){
+    .social-top{
+        margin-left: -1rem;
+    }
+    .card-equip{
+        padding: 10px 0 10px 0;
+    }
+    .other-services{
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    .description p {
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+}

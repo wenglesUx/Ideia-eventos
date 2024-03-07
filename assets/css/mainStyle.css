@@ -1,0 +1,479 @@
+
+:root{
+    --contrast-color:#ffa500;
+}
+*{
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration: none !important;  
+}
+
+/* header */
+/* PRIMEIRA SESSÃO DA AREA DE MENU */
+.topMenu span{
+    font-style: normal;
+    color:#2b2a2a;
+    font-size: 1.2rem;
+}
+.topMenu i{
+    color: #5ba379;
+    font-size: 1.5rem;
+}
+.social-top i{
+    font-size: 1.5rem;
+    color:#5ba379
+}
+#button-top{
+    gap:5px;
+}
+#button-top i{
+    color:white;
+}
+/* AREA DE MENU (DESKTOP E MOBILE) */
+.navbar-brand {
+    height: 100px;
+}
+.navbar-brand img{
+    height: 100%;
+}
+.navbar-nav{
+    flex-direction: row !important;
+}
+.navbar-nav #social-area{
+    display:none !important;
+}
+
+header{
+    box-shadow: -3px 5px 10px gray;
+}
+/* AREA DO BANNER */
+.banner_section {
+
+  height: 35rem;
+  z-index: 1;
+}
+#information_area{
+height: 20rem;
+width: 30rem;
+    bottom: 0;
+    margin-left:5rem ;
+    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+ 
+ opacity: 0.1;
+}
+
+#button-indicator{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #5ba379;
+}
+.carousel-item span{
+    color:#5ba379;
+    font-weight: bold !important;
+}
+.carousel-banner{
+  
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.item-banner{
+    height: 100% !important;
+    overflow: hidden !important;
+    position: relative;
+    position: relative;
+}
+.carousel-item a{
+    text-decoration: none;
+
+    
+}
+.carousel-item h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+   
+    color:#fff;
+    margin-top: 30%;
+    bottom: 0;
+}
+.carousel-inner-banner{
+    height: 100%;
+}
+.blur-image{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    background-color: rgba(56, 56, 56, 0.6);
+    padding: 3rem;
+}
+.carousel-item #carousel-img{
+height: 100%;
+width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: yellow;
+    
+}
+/* AREA PRINCIPAL DE INFORMAÇÕES */
+.main-informations{
+    margin:10rem 0 
+}
+#title-main-information h1{
+    color:#5ba379;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.description{
+    margin-left: 5rem;
+    width: 600px;
+}
+.description p{
+    font-size:1.5rem
+}
+
+/* EDIÇÕES GERAIS DE BOTÕES */
+#button-main{
+    margin-top:2rem;
+    width:12rem !important;
+    height:40px;
+}
+
+.button-edit{
+    width:12rem;
+    height:40px;
+    background-color: var(--contrast-color);
+    border:none;
+    outline: none;
+    transition: .2s linear;
+    color:white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   
+}
+
+.button-edit:hover{
+    transform: scale(1.1);
+    transition: .3s linear;
+}
+/* AREA DO PORTIFOLIO */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#title-section{
+    color:#6c757d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+#subtitle-service{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.cards-service-area{
+    display:flex;
+
+}
+.card{
+    height: 20rem !important ;
+    flex: 1 300px;
+    border:4px solid red;
+    overflow: hidden;
+    position:relative;
+    border-radius: 0% !important;
+
+}
+.card img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+    transition:.2s ease-in-out
+}
+.card:hover > #img_scale{
+   transform: scale(1.1);
+   transition:.2s ease-in-out
+}
+#card-mobile-indicator{
+    position:absolute;
+    z-index: 5;
+    color:white;
+    border-bottom:1px solid #ffa500 ;
+    background-color: rgba(56, 56, 56, 0.6);
+    text-transform: uppercase;
+  
+}
+#card-mobile-indicator h3{
+    font-weight: bold;
+    font-size: 1rem !important;
+}
+#card-mobile-indicator{
+    display: none;
+}
+.card:hover > #card-mobile-indicator{
+    display: none;
+}
+/* card sobreposto  */
+.cover-informations{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity:0;
+    transition:.3s ease-in-out
+
+}
+.card:hover > .cover-informations{
+    opacity:1;
+    transition:.2s ease-in-out
+}
+/* edição do card */
+.cover-informations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none !important;
+}
+.cover-informations a{
+  
+ 
+    /* color:FFA500 */
+}
+.cover-informations h1{
+    font-size: 1.5rem !important;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+#card_underline{
+    height: 0.5rem;
+   width: 300px;
+    border:none;
+    background-color: var(--contrast-color);
+    opacity: .9;
+    
+}
+
+/* SESSÃO DE COMPONETES DO LOCAL */
+.other-services{
+    margin-left: 3rem ;
+    margin-right: 3rem ;
+}
+.list-equip{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-equip{
+    display: flex;
+    flex: 1 200px;
+    padding: 20px;
+    transition: .2s linear;
+    
+}
+.card-equip:hover{
+    transition: .2s linear;
+    background-color: #d1d1d1;
+}
+#card-banner{
+    
+    height: 80px ;
+}
+#card-banner img{
+    height: 100%;
+}
+#card-title{
+    margin-left:20px
+}
+
+.list-equip h3{
+    color:#6c757d;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.other-services #subtitle-service a{
+    text-decoration: none;
+    color:black;
+}
+.other-services #subtitle-service i{
+    color:tomato;
+}
+.list-equip p{
+    font-size: 0.8rem;
+}
+/* SESSÃO DA GALERIA */
+.galery-item{
+  
+    width: 100%;
+    height: 100vh;
+}
+.galery-item img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+.grid-item {
+    width: 100%;
+}
+
+.grid-container a img{
+    height: 100%;
+    object-fit: cover;
+}
+.grid-container a{
+    transition: .2s linear;
+    border:4px solid transparent;
+}
+.grid-container a:hover{
+    border:4px solid #5ba379;
+    transition: .2s linear;
+}
+#gallery-button{
+    align-self: center;
+   margin-top: 2rem;
+}
+
+/* SESSÃO DO CARD DE ORÇAMENTO */
+.contact{
+    text-align: center;
+    border:2px solid gray;
+
+}
+.contact h1{
+    color:#6c757d;
+  
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+footer{
+    background-color: #2b2a2a;
+
+}
+footer h1{
+    font-size: 1.5rem;
+    color:#5ba379;
+   
+}
+.title-informations-footer h1{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.logoImg{
+    height: 70px !important;
+}
+#logo-footer{
+    height: 100% !important;
+}
+
+.services-footer ul {
+    text-align: left !important;
+}
+.services-footer ul li{
+list-style: none !important;
+line-height: 30px;
+}
+.services-footer a::after{
+    content:'';
+    display: block;
+    border-bottom: 2px solid #ffa500;
+    width: 0;
+    transition: .2s linear;
+}
+.services-footer a:hover::after{
+    width: 100%;
+    transition: .2s linear;
+}
+
+.services-footer a,
+.contacts-footer i,
+.social-media i{
+    text-decoration: none;
+    color:white;
+    transition: .2s linear;
+}
+.contacts-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-style: normal;
+   
+}
+.contacts-footer span{
+    margin-left: 10px;
+    font-style: normal;
+}
+.contacts-footer i:hover{
+    color:#ffa500;
+    transition: .2s linear;
+}
+
+.social-media{
+    font-size: 2rem;
+}
+
+.credits{
+    background-color:black ;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+    gap: 4rem;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.credits strong{
+    color:#5ba379;
+   
+}
+#credit strong{
+    border-bottom: 1px solid #5ba379;
+}
+/* EDIÇÕES UNICAS DO BOTÃO MOBILE */
+.mobile-button {
+    right: 0;
+    margin-right: 30px;
+    font-size: 3rem;
+    position: absolute;
+    z-index: 6;
+    display: none;
+}
+.Active {
+    margin-right: -100% !important;
+    right: 100% !important;
+    padding: 40px 20px;
+    padding-left: 4rem !important;
+    z-index: 5 !important;
+}
+
+.banner-blur{
+    height: 100%;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position:absolute
+}

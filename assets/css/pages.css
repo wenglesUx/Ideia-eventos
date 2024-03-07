@@ -1,0 +1,53 @@
+.bi-house-fill{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    z-index: 99 !important;
+    cursor: pointer;
+    
+}
+/* .bi-house-fill::after{
+    content:'';
+    display: block;
+    border-bottom: 2px solid #f55a00;
+opacity:0.3;
+    animation: loader-back-page 2s infinite;
+} */
+/* @keyframes loader-back-page {
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width:100%;
+    }
+    
+} */
+.titlePage{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.titlePage h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:whitesmoke !important;
+    padding: 30px;
+}
+.banner_section{
+    height: 15rem;
+}
+#image_banner img{
+    object-fit: cover;
+    object-position:center ;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
